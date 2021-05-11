@@ -1,4 +1,5 @@
 <template>
+
    <section class="posts">
           <div class="row">
               <h2>Fresh-out of the oven</h2>
@@ -37,9 +38,13 @@
               </div>
           </div>
   </section>
+
+<router-view v-show="!routerActive" name="postView" class="postview" />
+  
 </template>
 
 <script>
+
 export default {
     data(){
         return {
@@ -51,6 +56,7 @@ export default {
             starPercentage: 0,
             startPercentageRounded: 0,
             starsTotal: 5,
+            routerActive: false
         }
     },
     mounted(){
@@ -71,6 +77,7 @@ export default {
             }
         },
         listenRouter(){
+            this.routerActive = true;
             this.$emit('listenForRouter')
         }
       
@@ -82,12 +89,11 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
+
 .postview{
     min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
+
 
 .posts{
     min-height: 100vh;

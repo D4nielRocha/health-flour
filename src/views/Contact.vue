@@ -34,7 +34,13 @@
     methods:{
       submitForm(e){
         console.log(e);
-        console.log(this.firstName, this.lastName, this.email, this.message);
+        let newProduct = {
+            firstName: this.firstName,
+            lastName: this.lastName,
+            email: this.email,
+            message: this.message
+        }
+        console.log(newProduct);
       }
     }
   }

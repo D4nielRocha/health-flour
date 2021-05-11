@@ -10,9 +10,7 @@
     </ul>
     <img src="https://svgsilh.com/svg/2022578.svg" alt="">
   </section>
-  <section class="posts">
-    <Posts />
-  </section>
+
   <footer>
     <Footer />
   </footer>
@@ -32,12 +30,9 @@ export default {
 <style scoped>
 
     .cornbread{
-        margin-left: 7.5rem;
         min-height: 100vh;
         width: 50%;
         position: relative;
-        left: 30vw;
-        /* background: lightcoral; */
         text-align: center;
         display: flex;
         justify-content: center;

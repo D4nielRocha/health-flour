@@ -11,7 +11,7 @@ const routes = [
     path: '/home',
     name: 'Home',
     components: {
-      mainView: Home
+      mainView: Home,
     } 
   },
   {
@@ -32,6 +32,7 @@ const routes = [
     path: '/cornbread',
     name: 'CornBread',
     components:{
+      mainView: Landing,
       postView: CornBread
     } 
   },
@@ -39,6 +40,7 @@ const routes = [
     path: '/lowcarb',
     name: 'LowCarb',
     components:{
+      mainView: Landing,
       postView: LowCarb
     } 
   },
@@ -46,6 +48,7 @@ const routes = [
     path: '/functional',
     name: 'Functional',
     components:{
+      mainView: Landing,
       postView: Functional
     } 
   }

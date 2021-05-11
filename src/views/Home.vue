@@ -1,4 +1,5 @@
 <template>
+<section class="homeComponent">
   <div class="container">
     <div class="row">
       <div class="content col-12">
@@ -10,8 +11,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto adipisci tempora laboriosam rerum reprehenderit, aperiam hic magni a incidunt natus tempore dignissimos, porro laborum cumque velit voluptatem earum itaque. Fugit numquam eaque aut architecto quo officia, ad quaerat est exercitationem explicabo? Tempora temporibus repellendus officia repellat quidem voluptatibus delectus!</p>
       </div>
     </div>
-    
   </div>
+</section>
 </template>
 
 <script>
@@ -33,6 +34,12 @@ export default {
 </script>
 
 <style scoped>
+
+.homeComponent{
+  min-height: 100vh;
+
+}
+
 .container{
   min-height: 100vh;
   height: auto !important;

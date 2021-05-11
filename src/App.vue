@@ -10,9 +10,10 @@
       <router-link to="/contact" @click="showPost">Contact</router-link>
     </div>
   </div>
+  <keep-alive>
     <router-view name="mainView" />
-  <router-view name="postView" class="postview" />
-  <Posts v-show="!routerActive"  @listenForRouter="updateRouter" />
+  </keep-alive>
+  <Posts @listenForRouter="updateRouter" />
   <Footer v-show="!routerActive" />
 </template>
 
@@ -53,18 +54,6 @@ export default {
   color: #2c3e50;
   min-height: 100vh;
 
-}
-
-.postview{
-  min-height: 80vh;
-  /* background: black; */
-  width: 70vw;
-  /* position: absolute; */
-  /* top: 100vh; */
-  /* left: 30vw; */
-  text-align: center;
-  margin-top: 10rem;
-  
 }
 
 #nav {
