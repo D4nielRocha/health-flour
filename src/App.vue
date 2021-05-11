@@ -5,9 +5,8 @@
       <router-link to="/" ><h1>BRAND</h1></router-link>
     </div>
     <div class="routers">
-      <!-- <router-link to="/" @click="showPost">Landing</router-link> -->
-      <router-link to="/home" @click="showPost">Home</router-link>
-      <router-link to="/contact" @click="showPost">Contact</router-link>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
   </div>
   <keep-alive>
