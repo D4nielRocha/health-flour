@@ -63,7 +63,7 @@
     margin-top: 5rem;
   }
   form{
-    background: #bdbd78;
+    background: #b18d6df8;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -73,8 +73,8 @@
     width: 30vw;
     /* margin-top: 5rem; */
     /* background: rgb(243, 237, 227); */
-    box-shadow: 0 0 20px antiquewhite;
-    border-radius: 25px 0px;
+    box-shadow: 5px 15px 25px #b18d6df8;
+    border-radius: 25px 5px;
     padding: 1rem;
   }
 

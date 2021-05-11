@@ -5,7 +5,7 @@
       <router-link to="/" ><h1>BRAND</h1></router-link>
     </div>
     <div class="routers">
-      <router-link to="/" @click="showPost">Landing</router-link>
+      <!-- <router-link to="/" @click="showPost">Landing</router-link> -->
       <router-link to="/home" @click="showPost">Home</router-link>
       <router-link to="/contact" @click="showPost">Contact</router-link>
     </div>
@@ -14,7 +14,7 @@
     <router-view name="mainView" />
   </keep-alive>
   <Posts @listenForRouter="updateRouter" />
-  <Footer v-show="!routerActive" />
+  <Footer />
 </template>
 
 <script>
@@ -33,10 +33,6 @@ export default {
     methods:{
       updateRouter(){
         this.routerActive = true
-        console.log(`routerActive changed to:`, this.routerActive)
-      },
-      showPost(){
-        this.routerActive = false
         console.log(`routerActive changed to:`, this.routerActive)
       }
     }

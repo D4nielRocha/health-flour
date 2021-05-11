@@ -29,8 +29,9 @@ export default {
 <style scoped>
 
     .cornbread{
+        background: linear-gradient(180deg, #b18d6d79, #eceff0);
         min-height: 100vh;
-        width: 50%;
+        width: 100%;
         position: relative;
         text-align: center;
         display: flex;
